@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Manipulação de eventos</h1>
+    <div id= "box" style="width: 150px; height: 150px; background-color: aqua;"></div>
+    <div id=""><p></p></div>
+    <script>
+       let element = document.getElementById("box")
+        element.addEventListener("mouseover", () =>{
+        //element.style.backgroundColor = "red"
+        element.style.width = "300px"
+        element.style.height = "300px"
+       })
+        element.addEventListener("mouseout", () => {
+        //element.style.backgroundColor = "aqua"
+        element.style.width = "75px"
+        element.style.height = "75px"
+       })
+    </script>
+</body>
+</html>
